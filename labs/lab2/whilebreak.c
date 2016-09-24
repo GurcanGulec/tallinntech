@@ -5,7 +5,7 @@ int main(void)
     int number = 0;
     while (number <= 10)
     {
-        printf("A = %d\n", number);
+        printf("The value of number is  %d\n", number);
 	// using if to decide which number to stop
 	if (number == 3)
 	{   
