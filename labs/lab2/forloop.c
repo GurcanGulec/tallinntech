@@ -1,14 +1,17 @@
 #include <stdio.h>
 
-int main () 
+int main(void) 
 {
-	int sum = 0;
-	for (int number = 0; number <= 10; number++) //Initialize for loop
-	{
-		printf("The value of number is %d\n", number); //Print out the value of i
-		sum = sum + number;
-	} 
-	printf("The sum of all the numbers is %d\n", sum);
-	return 0;
-	
+    int sum = 0;
+    // starting the loop
+    for (int number = 0; number <= 10; number++) 
+    {
+        // printing out the value of number
+        printf("The value of number is %d\n", number); 
+	// adding number's value to sum
+	sum = sum + number;
+    } 
+    // printing out the value of sum
+    printf("The sum of all the numbers is %d\n", sum);
+    return 0;
 }

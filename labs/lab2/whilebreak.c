@@ -1,19 +1,21 @@
 #include <stdio.h>
 
-int main ()
+int main(void)
 {
-	int number = 0;
-	while (number <= 10)
-	{
-		printf("A = %d\n", number);
-		if (number == 3)
-		{
-			printf("Stopping here cuz my favorite number is %d\n", number);
-			break;
-		}
-
-		number++;
+    int number = 0;
+    while (number <= 10)
+    {
+        printf("A = %d\n", number);
+	// using if to decide which number to stop
+	if (number == 3)
+	{   
+	    // printing out the thing I wanna print out :P
+	    printf("Stopping here cuz my favorite number is %d\n", number);
+	    // making it stop with break;
+	    break;
 	}
-
-	return 0;
+	// increasing the value of number
+	number++;
+    }
+    return 0;
 }
