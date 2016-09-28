@@ -1,3 +1,13 @@
+/**
+ * File: whilebreak.c
+ * Author: Gurcan Gulec
+ * Created: 24 September 2016
+ * Last edit: 27 September 2016
+ * 
+ * Description: Homework about while-break.
+ * 
+ */
+
 #include <stdio.h>
 
 int main(void)
