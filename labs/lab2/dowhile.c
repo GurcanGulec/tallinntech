@@ -1,3 +1,13 @@
+/**
+ * File: dowhile.c
+ * Author: Gurcan Gulec
+ * Created: 24 September 2016
+ * Last edit: 27 September 2016
+ * 
+ * Description: Homework about do while.
+ * 
+ */
+
 #include <stdio.h>
 
 int main(void)
