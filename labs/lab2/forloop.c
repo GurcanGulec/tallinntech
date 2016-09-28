@@ -1,3 +1,13 @@
+/**
+ * File: forloop.c
+ * Author: Gurcan Gulec
+ * Created: 24 September 2016
+ * Last edit: 27 September 2016
+ * 
+ * Description: Homework about for loop.
+ * 
+ */
+
 #include <stdio.h>
 
 int main(void) 
