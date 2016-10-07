@@ -18,7 +18,7 @@ int main(void)
     int i, j;
     int a;
 
-    float sum = 0;
+    float average = 0;
     float median;
     int sumOfOdd = 0;
 
@@ -56,13 +56,13 @@ int main(void)
     printf("\nSmallest: %d\n", numbers[0]);
     printf("Biggest: %d\n", numbers[9]);
 
-    // calculating the sum of the numbers and printing them out
+    // calculating the arithmetic average of the numbers and printing them out
 
     for (a = 0; a < n; a++)
     {
-        sum += numbers[a];
+        average += numbers[a];
     }
-    printf("Sum: %f\n", sum/n);
+    printf("Arithmetic Average: %f\n", average/n);
 
     // finding the median
     
@@ -78,7 +78,7 @@ int main(void)
             sumOfOdd += numbers[j];
         }
     }
-    printf("Sum of Odd Numbers: %d", sumOfOdd);
+    printf("Sum of Odd Numbers: %d\n", sumOfOdd);
     return 0;
 
 }
