@@ -13,7 +13,6 @@
 
 int main()
 {
-
     int date;
     int leap = 0;
     int m1[7] = {1, 3, 5, 7, 8, 10, 12}; 
@@ -58,9 +57,7 @@ int main()
                 return 0;
             }
         }
-            
     }
-
 
     // deciding leap years
     if(year % 100 == 0)
@@ -90,7 +87,6 @@ int main()
     // checking february
     if(month == 2)
     {
-
         if(leap == 1)
         {
             if(day != 29)
@@ -106,12 +102,10 @@ int main()
                 printf("Date not valid\n");
                 return 0;
             }
-
         }
-
     }
 
     printf("Date is valid\n");
     return 0;
-    
+
 }
