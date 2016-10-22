@@ -17,7 +17,15 @@ int main()
     int leap = 0;
     int m1[7] = {1, 3, 5, 7, 8, 10, 12}; 
 
+    printf("Enter a date(DDMMYYY): ");
     scanf("%d", &date);
+
+    if(date < 0)
+    {
+        printf("Date cannot be minus: ");
+        scanf("%d", &date);
+    }
+
     // finding the year
     int year = date % 10000;
     
@@ -31,8 +39,14 @@ int main()
     printf("Month = %d\n",month);
     printf("Year  = %d\n",year);
 
+    if(date <= 0)
+    {
+        printf("Date not valid\n");
+        return 0;
+    }
+
     // month cannot be bigger than 12
-    if(month > 12)
+    if(month > 12 || month <= 0)
     {
         printf("Date not valid\n");
         return 0;
@@ -89,7 +103,7 @@ int main()
     {
         if(leap == 1)
         {
-            if(day != 29)
+            if(day > 29)
             {
                 printf("Date not valid\n");
                 return 0;
@@ -97,7 +111,7 @@ int main()
         }
         else
         {
-            if(day != 28)
+            if(day > 28)
             {
                 printf("Date not valid\n");
                 return 0;
