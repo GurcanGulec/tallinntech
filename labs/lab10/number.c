@@ -62,7 +62,7 @@ int main()
 			int myNumber;
 			if (size > 0)
 			{
-				// convertin string into an integer
+				// converting string into an integer
 
 				myNumber = atoi(number);
 				
