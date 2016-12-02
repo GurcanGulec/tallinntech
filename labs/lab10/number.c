@@ -14,17 +14,14 @@
 int main()
 {
 	// creating the file pointers we are going to need
-
 	FILE *fp = fopen("bad_input.txt", "r");
 	FILE *ep = fopen("even.txt", "w");
 	FILE *op = fopen("odd.txt", "w");
 
 	// char string we are going to use with fgets function
-
 	char number[10];
 	
 	// checking if the files was opened
-
 	if (fp == NULL || ep == NULL || op == NULL)
 	{
 		printf("File was not opened.\n");
@@ -34,7 +31,6 @@ int main()
 		printf("File was opened.\n");	
 
 		// creating a loop to check the lines
-		
 		while (fgets(number, 10, fp) != NULL)
 		{
 			int size;
@@ -48,7 +44,6 @@ int main()
 			}
 
 			// making sure the values are numbers only	
-			
 			for (int i = size-1; i >= 0; i--)
 			{
 
@@ -63,12 +58,10 @@ int main()
 			if (size > 0)
 			{
 				// converting string into an integer
-
 				myNumber = atoi(number);
 				
 				// finding out which ones are odd and which ones are even
 				// and writing them to files
-
 				if (myNumber % 2)
 				{
 					fprintf(op, "%d\n", myNumber);
@@ -81,7 +74,6 @@ int main()
 		}
 
 		// closing the files
-
 		fclose(fp);	
 		fclose(ep);
 		fclose(op);
